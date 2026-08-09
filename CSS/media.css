@@ -1,0 +1,16 @@
+@media (max-width: 380px) {
+
+    .calculadora {
+        padding: 16px;
+    }
+
+    .nota {
+        flex-direction: column;
+    }
+
+    .nota .valor,
+    .nota .peso {
+        flex: none;
+    }
+
+}

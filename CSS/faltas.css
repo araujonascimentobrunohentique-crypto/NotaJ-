@@ -1,0 +1,40 @@
+/* =========================
+   CAMPOS DE FALTAS
+========================= */
+
+.campos-faltas {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--espaco-medio);
+
+    margin-bottom: var(--espaco-medio);
+}
+
+
+.campos-faltas .campo {
+    margin-top: 0;
+}
+
+
+.campos-faltas label {
+    display: block;
+
+    white-space: nowrap;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 650px) {
+
+    .campos-faltas {
+        grid-template-columns: 1fr;
+    }
+
+}

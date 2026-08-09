@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Calcule quantas faltas você ainda pode ter e descubra sua frequência escolar de forma rápida e gratuita."
+    >
+
+    <title>Calculadora de Faltas Escolares | NotaJá</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/faltas.css">
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <a href="../index.html" class="logo">
+            Nota<span>Já</span>
+        </a>
+
+        <nav>
+            <a href="../index.html">Início</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="container">
+
+            <h1>Calculadora de Faltas</h1>
+
+            <p class="descricao">
+                Descubra sua frequência escolar e quantas aulas
+                você ainda pode faltar.
+            </p>
+
+
+            <div class="calculadora">
+
+                <div class="campos-faltas">
+
+                    <div class="campo">
+                        <label for="total-aulas">
+                            Total de aulas
+                        </label>
+
+                        <input
+                            type="number"
+                            id="total-aulas"
+                            min="1"
+                            placeholder="Ex: 80"
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="faltas">
+                            Faltas atuais
+                        </label>
+
+                        <input
+                            type="number"
+                            id="faltas"
+                            min="0"
+                            placeholder="Ex: 10"
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="limite">
+                            Limite de faltas (%)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="limite"
+                            min="1"
+                            max="100"
+                            value="25"
+                        >
+                    </div>
+
+                </div>
+
+
+                <button id="calcular">
+                    Calcular
+                </button>
+
+
+                <div id="resultado"></div>
+
+            </div>
+
+
+            <a href="../index.html" class="voltar">
+                ← Voltar para o NotaJá
+            </a>
+
+
+            <section class="conteudo-seo">
+
+                <h2>Como calcular o limite de faltas?</h2>
+
+                <p>
+                    Para descobrir quantas faltas você pode ter,
+                    é necessário saber a quantidade total de aulas
+                    e o percentual máximo de faltas permitido.
+                </p>
+
+
+                <h2>Como usar a calculadora de faltas?</h2>
+
+                <ol>
+
+                    <li>
+                        Informe o total de aulas.
+                    </li>
+
+                    <li>
+                        Informe a quantidade de faltas que você já possui.
+                    </li>
+
+                    <li>
+                        Informe o limite de faltas permitido.
+                    </li>
+
+                    <li>
+                        Clique em "Calcular".
+                    </li>
+
+                </ol>
+
+
+                <h2>Qual é o limite de faltas?</h2>
+
+                <p>
+                    O limite de faltas pode variar conforme a instituição,
+                    curso e regras aplicáveis. Informe na calculadora o
+                    percentual utilizado pela sua escola ou instituição.
+                </p>
+
+
+                <h2>Como saber minha frequência escolar?</h2>
+
+                <p>
+                    A frequência pode ser calculada comparando a quantidade
+                    de aulas frequentadas com o total de aulas realizadas.
+                    A calculadora apresenta esse percentual com base nos
+                    dados informados.
+                </p>
+
+            </section>
+
+
+            <section class="outras-ferramentas">
+
+                <h2>Outras ferramentas do NotaJá</h2>
+
+                <div class="links-ferramentas">
+
+                    <a href="media.html">
+
+                        <strong>
+                            Calculadora de Média
+                        </strong>
+
+                        <span>
+                            Calcule sua média escolar usando suas notas e pesos.
+                        </span>
+
+                    </a>
+
+
+                    <a href="nota_necessaria.html">
+
+                        <strong>
+                            Calculadora de Nota Necessária
+                        </strong>
+
+                        <span>
+                            Descubra quanto precisa tirar para alcançar sua média.
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/faltas.js"></script>
+
+</body>
+
+</html>

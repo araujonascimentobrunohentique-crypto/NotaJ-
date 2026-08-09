@@ -1,0 +1,227 @@
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 80px var(--espaco-medio) 100px;
+
+    text-align: center;
+}
+
+
+.hero-conteudo {
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+.subtitulo {
+    color: var(--cor-principal);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 72px);
+
+    line-height: 1.05;
+
+    color: var(--cor-texto);
+}
+
+
+.hero h1 span {
+    color: var(--cor-principal);
+}
+
+
+.hero .descricao {
+    max-width: 600px;
+
+    margin: 25px auto 35px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: var(--cor-texto-secundario);
+}
+
+
+/* =========================
+   BOTÃO PRINCIPAL
+========================= */
+
+.botao-principal {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: var(--cor-principal);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: var(--raio-pequeno);
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+
+.botao-principal:hover {
+    background: var(--cor-principal-hover);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SEÇÃO DE FERRAMENTAS
+========================= */
+
+.ferramentas {
+    max-width: var(--largura-site);
+
+    margin: 0 auto;
+
+    padding: 30px var(--espaco-medio) 100px;
+}
+
+
+.titulo-secao {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.titulo-secao p {
+    color: var(--cor-principal);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.titulo-secao h2 {
+    font-size: 32px;
+
+    color: var(--cor-texto);
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: var(--espaco-medio);
+}
+
+
+.card {
+    padding: var(--espaco-grande);
+
+    background: var(--cor-fundo-card);
+
+    border: 1px solid var(--cor-borda);
+
+    border-radius: var(--raio-medio);
+
+    text-decoration: none;
+
+    color: inherit;
+
+    transition: 0.2s;
+}
+
+
+.card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--sombra-hover);
+}
+
+
+.icone {
+    font-size: 35px;
+
+    margin-bottom: var(--espaco-medio);
+}
+
+
+.card h3 {
+    font-size: 21px;
+
+    color: var(--cor-texto);
+
+    margin-bottom: var(--espaco-pequeno);
+}
+
+
+.card p {
+    color: var(--cor-texto-secundario);
+
+    line-height: 1.6;
+
+    margin-bottom: var(--espaco-medio);
+}
+
+
+.card-link {
+    color: var(--cor-principal);
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    padding: var(--espaco-grande) var(--espaco-medio);
+
+    text-align: center;
+
+    border-top: 1px solid var(--cor-borda);
+
+    color: var(--cor-texto-secundario);
+}
+
+
+/* =========================
+   RESPONSIVIDADE DA HOME
+========================= */
+
+@media (max-width: 650px) {
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}

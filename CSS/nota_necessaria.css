@@ -1,0 +1,32 @@
+@media (max-width: 380px) {
+
+    .calculadora {
+        padding: 16px;
+    }
+
+    .nota {
+        flex-direction: column;
+    }
+
+    .nota .valor,
+    .nota .peso {
+        flex: none;
+    }
+
+}
+/* =========================
+   CAMPOS ESPECÍFICOS
+========================= */
+
+.campo {
+    margin-top: var(--espaco-medio);
+}
+
+
+.campo label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Calcule sua média escolar de forma rápida e gratuita. Adicione suas notas e pesos e descubra sua média final.">
+
+    <title>Calculadora de Média Escolar | NotaJá</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Calculadora de Média</h1>
+
+        <p class="descricao">
+            Calcule sua média escolar de forma rápida e fácil.
+        </p>
+
+        <div class="calculadora">
+
+            <div id="notas">
+
+                <div class="nota">
+                    <input type="number" class="valor" placeholder="Nota" min="0" max="10" step="0.1">
+
+                    <input type="number" class="peso" placeholder="Peso" min="0" step="0.1">
+                </div>
+
+                <div class="nota">
+                    <input type="number" class="valor" placeholder="Nota" min="0" max="10" step="0.1">
+
+                    <input type="number" class="peso" placeholder="Peso" min="0" step="0.1">
+                </div>
+
+            </div>
+
+            <button type="button" id="adicionarNota">
+                + Adicionar nota
+            </button>
+
+            <button type="button" id="calcularMedia">
+                Calcular média
+            </button>
+
+            <div id="resultado"></div>
+        </div>
+        <a href="../index.html" class="voltar">
+            ← Voltar para o NotaJá
+        </a>
+
+        <section class="conteudo-seo">
+
+            <h1>Calculadora de Média Escolar</h1>
+
+            <p class="descricao">
+                Calcule sua média escolar de forma rápida e gratuita.
+                Informe suas notas e pesos para descobrir sua média.
+            </p>
+
+            <!-- CALCULADORA AQUI -->
+
+
+            <section class="conteudo-seo">
+
+                <h2>Como calcular a média escolar?</h2>
+
+                <p>
+                    A média escolar é calculada a partir das notas obtidas
+                    nas avaliações. Quando todas as avaliações têm o mesmo
+                    peso, basta somar as notas e dividir pela quantidade
+                    de avaliações.
+                </p>
+
+                <h3>Como calcular uma média simples?</h3>
+
+                <p>
+                    Na média simples, todas as notas possuem a mesma
+                    importância. Por exemplo, se você tirou 6, 7 e 8,
+                    a média é obtida somando as três notas e dividindo
+                    o resultado por 3.
+                </p>
+
+                <h3>Como calcular uma média ponderada?</h3>
+
+                <p>
+                    Quando as avaliações possuem pesos diferentes, cada
+                    nota tem uma influência diferente no resultado final.
+                    Nesse caso, a nota é considerada de acordo com o peso
+                    atribuído à avaliação.
+                </p>
+
+
+                <h2>Como usar a calculadora de média?</h2>
+
+                <ol>
+                    <li>Digite suas notas.</li>
+                    <li>Informe o peso de cada avaliação.</li>
+                    <li>Adicione outras notas, se necessário.</li>
+                    <li>Clique em calcular.</li>
+                </ol>
+
+
+                <h2>Qual é a diferença entre média simples e ponderada?</h2>
+
+                <p>
+                    A média simples considera todas as notas com a mesma
+                    importância. Já a média ponderada considera os pesos
+                    de cada avaliação, fazendo com que algumas notas tenham
+                    maior influência no resultado.
+                </p>
+
+
+                <h2>Posso calcular minha média com pesos diferentes?</h2>
+
+                <p>
+                    Sim. A calculadora do NotaJá permite informar o peso
+                    de cada avaliação para calcular a média considerando
+                    a importância de cada nota.
+                </p>
+
+            </section>
+
+            <section class="outras-ferramentas">
+
+                <h2>Outras ferramentas do NotaJá</h2>
+
+                <div class="links-ferramentas">
+
+                    <a href="nota_necessaria.html">
+                        <strong>Quanto preciso tirar?</strong>
+                        <span>
+                            Descubra a nota necessária para alcançar sua média.
+                        </span>
+                    </a>
+
+                </div>
+
+            </section>
+        </section>
+
+
+
+    </main>
+
+    <script src="../js/media.js"></script>
+
+</body>
+
+</html>
